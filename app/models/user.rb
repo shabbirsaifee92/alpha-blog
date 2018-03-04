@@ -1,8 +1,5 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
 
-end
-=======
   validates :username, presence: true,
                        uniqueness: { case_sensitive: false },
                        length: { minimum: 3, maximum: 25 }
@@ -14,4 +11,4 @@ end
                     length: { maximum: 100 },
                     format: { with: VALID_EMAIL_REGEX }
 end
->>>>>>> user-validations
+
