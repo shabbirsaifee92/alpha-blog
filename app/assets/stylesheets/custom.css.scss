@@ -1,0 +1,72 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover{
+  text-decoration: none;
+}
+
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset_url('sunset.jpg');
+  background-size: cover;
+  height: 600px;
+}
+
+.article-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.article-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover{
+  color: #222;
+}
+
+footer small{
+  float:left;
+}
+
+footer ul{
+  float:right;
+  list-style: none;
+}
+
+footer ul li{
+  float: left;
+  margin-left: 15px;
+
+}
