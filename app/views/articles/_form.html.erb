@@ -20,6 +20,16 @@
           <%= f.text_area :description, rows:5, placeholder: 'Description',class:'form-control'%>
         </div>
       </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb|%>
+              <% cb.label(class: 'check-box-inline input_checkbox'){cb.check_box(class: 'checkbox') + cb.text} %>
+            <% end %>
+          </div>
+        </div>
+      </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <%= f.submit class: 'btn btn-primary btn-lg'%>
